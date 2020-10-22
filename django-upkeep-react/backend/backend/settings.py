@@ -135,4 +135,4 @@ CORS_ORIGIN_WHITELIST = (
      'https://localhost:3000',
  )
  
- STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
