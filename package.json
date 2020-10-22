@@ -1,9 +1,9 @@
 {
   "name": "frontend",
   "engines": {
-   "node": "10.19.0",
-   "npm": "6.14.8"
-   },
+    "node": "10.19.0",
+    "npm": "6.14.8"
+  },
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:8000",
@@ -18,14 +18,17 @@
     "react-dom": "^17.0.0",
     "react-scripts": "3.4.4",
     "reactstrap": "^8.6.0",
+    "serve": "^11.3.2",
     "whitenoise": "0.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+},
   "eslintConfig": {
     "extends": "react-app"
   },
