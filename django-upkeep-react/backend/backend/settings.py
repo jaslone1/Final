@@ -1,3 +1,4 @@
+import dj_database_url
 """
 Django settings for backend project.
 
@@ -25,7 +26,7 @@ SECRET_KEY = 'tnu6@kur9!rf12q)2g*&wrmef8hdrciw755n!5nbt*_548&#fj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'protected-depths-82557.herokuapp.com/']
 
 
 # Application definition
@@ -83,7 +84,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
