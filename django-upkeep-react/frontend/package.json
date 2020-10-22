@@ -9,10 +9,12 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.20.0",
     "bootstrap": "^4.5.3",
+    "dj-database-url": "0.0.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-scripts": "3.4.4",
-    "reactstrap": "^8.6.0"
+    "reactstrap": "^8.6.0",
+    "whitenoise": "0.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
