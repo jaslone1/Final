@@ -1,6 +1,6 @@
 import os
 import psycopg2
-
+import dj_database_url
 """
 Django settings for backend project.
 
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware', 
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
  }
 
@@ -130,14 +130,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Custom user model
+AUTH_USER_MODEL = "authentication.CustomUser"
+
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ORIGIN_WHITELIST = (
      'https://localhost:3000',
  )
- 
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-import dj_database_url
+
 DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
-DATABASE_URL = os.environ['DATABASE_URL']
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+DATABASE_URL = os.environ['DATABASE_URL']

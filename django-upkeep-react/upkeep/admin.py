@@ -1,10 +1,10 @@
-# todo/admin.py
+# upkeep/admin.py
 
 from django.contrib import admin
-from .models import Upkeep 
+from .models import CustomUser
 
-class UpkeepAdmin(admin.ModelAdmin):
-  list_display = ('bike', 'parts', 'maintenance') 
+class CustomUserAdmin(admin.ModelAdmin):
+    model = CustomUser
 
 # Register your models here.
-admin.site.register(Upkeep, UpkeepAdmin) 
+admin.site.register(CustomUser, CustomUserAdmin)
