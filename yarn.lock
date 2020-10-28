@@ -3729,6 +3729,11 @@ dir-glob@2.0.0:
     arrify "^1.0.1"
     path-type "^3.0.0"
 
+dj-database-url@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/dj-database-url/-/dj-database-url-0.0.1.tgz#70956f32a313f52953e218b0be91afb67ce086f7"
+  integrity sha512-MQd6MRFEeX6fXyxyop16qn6Kbhqwvo4xoC+zhruWeLQvYH0fFNyJ7CyRLOojrLlQT1vIifeNj9E/3lXGZpK8mA==
+
 dns-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/dns-equal/-/dns-equal-1.0.0.tgz#b39e7f1da6eb0a75ba9c17324b34753c47e0654d"
@@ -3861,7 +3866,7 @@ dotenv-expand@5.1.0:
   resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-5.1.0.tgz#3fbaf020bfd794884072ea26b1e9791d45a629f0"
   integrity sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==
 
-dotenv@8.2.0:
+dotenv@8.2.0, dotenv@^8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
@@ -10605,6 +10610,11 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
+
+whitenoise@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/whitenoise/-/whitenoise-0.0.1.tgz#552516a036d3c01ca7819869bdc80522ac2f2205"
+  integrity sha512-doAG/PnQWImgIkt/mQiMpLe2xrFUeRs2X/bQn8xWkkMKXHzIBsHKlVYVZLUC3Lci+7Jpx/lmOjcglKmtKNzMaw==
 
 word-wrap@~1.2.3:
   version "1.2.3"
