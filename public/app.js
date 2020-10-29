@@ -1,117 +1,117 @@
 class App extends React.Component {
     state = {
-        people:[]
+        bikes:[]
     }
 
     componentDidMount = () => {
-        axios.get('/api/people').then(
+        axios.get('/api/bikes').then(
             (response) => {
                 this.setState({
-                    people:response.data
+                    bikes:response.data
                 })
             }
         )
     }
 
-    createPerson = (event) => {
+    createBike = (event) => {
         event.preventDefault();
         axios.post(
-            '/api/people',
+            '/api/bikes',
             {
-                name:this.state.newPersonName,
-                age:this.state.newPersonAge,
+                brand:this.state.newBikeBrand,
+                models:this.state.newBikeModel,
             }
         ).then(
             (response) => {
                 this.setState({
-                    people:response.data
+                    bikes:response.data
                 })
             }
         )
     }
 
-    changeNewPersonAge = (event) => {
+    changeNewBikeModel = (event) => {
         this.setState({
-            newPersonAge:event.target.value
+            newBikeModel:event.target.value
         });
     }
 
-    changeNewPersonName = (event) => {
+    changeNewBikeBrand = (event) => {
         this.setState({
-            newPersonName:event.target.value
+            newBikeBrand:event.target.value
         });
     }
 
-    deletePerson = (event) => {
-        axios.delete('/api/people/' + event.target.value).then(
+    deleteBike = (event) => {
+        axios.delete('/api/bikes/' + event.target.value).then(
             (response) => {
                 this.setState({
-                    people:response.data
+                    bikes:response.data
                 })
             }
         )
 
     }
 
-    updatePerson = (event) => {
+    updateBike = (event) => {
         event.preventDefault();
         const id = event.target.getAttribute('id');
         axios.put(
-            '/api/people/' + id,
+            '/api/bikes/' + id,
             {
-                name:this.state.updatePersonName,
-                age:this.state.updatePersonAge,
+                brand:this.state.updateBikeBrand,
+                models:this.state.updateBikeModel,
             }
         ).then(
             (response) => {
                 this.setState({
-                    people:response.data,
-                    name:'',
-                    age:null,
+                    bikes:response.data,
+                    brand:'',
+                    models:'',
                 })
             }
         )
     }
 
-    changeUpdatePersonName = (event) => {
+    changeUpdateBikeBrand = (event) => {
         this.setState(
             {
-                updatePersonName:event.target.value
+                updateBikeBrand:event.target.value
             }
         )
     }
 
-    changeUpdatePersonAge = (event) => {
+    changeUpdateBikeModel = (event) => {
         this.setState(
             {
-                updatePersonAge:event.target.value
+                updateBikeModel:event.target.value
             }
         )
     }
 
     render = () => {
         return <div>
-            <h2>Create Person</h2>
-            <form onSubmit={this.createPerson}>
-                <input onKeyUp={this.changeNewPersonName} type="text" placeholder="name" /><br/>
-                <input onKeyUp={this.changeNewPersonAge} type="number" placeholder="age" /><br/>
-                <input type="submit" value="Create Person" />
+            <h2>Create Bike</h2>
+            <form onSubmit={this.createBike}>
+                <input onKeyUp={this.changeNewBikeBrand} type="text" placeholder="brand" /><br/>
+                <input onKeyUp={this.changeNewBikeModel} type="text" placeholder="models" /><br/>
+                <input type="submit" value="Create Bike" />
             </form>
-            <h2>List of People</h2>
+            <h2>List of Bikes</h2>
             <ul>
                 {
-                    this.state.people.map(
-                        (person, index) => {
+                    this.state.bikes.map(
+                        (bike, index) => {
                             return <li key={index}>
 
-                                {person.name}: {person.age}
+                                {bike.brand}: {bike.models}
 
-                                <button value={person.id} onClick={this.deletePerson}>DELETE</button>
+                                <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
 
-                                <form id={person.id} onSubmit={this.updatePerson}>
-                                    <input onKeyUp={this.changeUpdatePersonName} type="text" placeholder="name"/><br/>
-                                    <input onKeyUp={this.changeUpdatePersonAge} type="number" placeholder="age"/><br/>
-                                    <input type="submit" value="Update Person"/>
+                                <form id={bike.id} onSubmit={this.updateBike}>
+                                    <input onKeyUp={this.changeUpdateBikeBrand} type="text" placeholder="brand"/><br/>
+                                    <input onKeyUp={this.changeUpdateBikeModel} type="text" placeholder="models"/><br/>
+                                    <input type="submit" value="Update Bike"/>
                                 </form>
                             </li>
                         }
