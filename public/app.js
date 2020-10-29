@@ -1,13 +1,13 @@
 class App extends React.Component {
     state = {
-        bikes:[]
+        people:[]
     }
 
     componentDidMount = () => {
-        axios.get('/api/bikes').then(
+        axios.get('/api/people').then(
             (response) => {
                 this.setState({
-                    bikes:response.data
+                    people:response.data
                 })
             }
         )
@@ -16,7 +16,7 @@ class App extends React.Component {
     createPerson = (event) => {
         event.preventDefault();
         axios.post(
-            '/api/bikes',
+            '/api/people',
             {
                 name:this.state.newPersonName,
                 age:this.state.newPersonAge,
@@ -24,7 +24,7 @@ class App extends React.Component {
         ).then(
             (response) => {
                 this.setState({
-                    bikes:response.data
+                    people:response.data
                 })
             }
         )
@@ -43,10 +43,10 @@ class App extends React.Component {
     }
 
     deletePerson = (event) => {
-        axios.delete('/api/bikes/' + event.target.value).then(
+        axios.delete('/api/people/' + event.target.value).then(
             (response) => {
                 this.setState({
-                    bikes:response.data
+                    people:response.data
                 })
             }
         )
@@ -57,7 +57,7 @@ class App extends React.Component {
         event.preventDefault();
         const id = event.target.getAttribute('id');
         axios.put(
-            '/api/bikes/' + id,
+            '/api/people/' + id,
             {
                 name:this.state.updatePersonName,
                 age:this.state.updatePersonAge,
@@ -65,7 +65,7 @@ class App extends React.Component {
         ).then(
             (response) => {
                 this.setState({
-                    bikes:response.data,
+                    people:response.data,
                     name:'',
                     age:null,
                 })
@@ -97,10 +97,10 @@ class App extends React.Component {
                 <input onKeyUp={this.changeNewPersonAge} type="number" placeholder="age" /><br/>
                 <input type="submit" value="Create Person" />
             </form>
-            <h2>List of bikes</h2>
+            <h2>List of People</h2>
             <ul>
                 {
-                    this.state.bikes.map(
+                    this.state.people.map(
                         (person, index) => {
                             return <li key={index}>
 
