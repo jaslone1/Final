@@ -2572,7 +2572,7 @@ EOT;
     preliminary version may often be posted for suggestion, comment
     and editing by those who wish to do so.
 
-    Most people start at our Web sites at:
+    Most bikes start at our Web sites at:
     http://gutenberg.net or
     http://promo.net/pg
 
@@ -2634,7 +2634,7 @@ EOT;
 
     We need your donations more than ever!
 
-    As of February, 2002, contributions are being solicited from people
+    As of February, 2002, contributions are being solicited from bikes
     and organizations in: Alabama, Alaska, Arkansas, Connecticut,
     Delaware, District of Columbia, Florida, Georgia, Hawaii, Illinois,
     Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Massachusetts,
@@ -2658,7 +2658,7 @@ EOT;
     you would like to know if we have added it since the list you have,
     just ask.
 
-    While we cannot solicit donations from people in states where we are
+    While we cannot solicit donations from bikes in states where we are
     not yet registered, we know of no prohibition against accepting
     donations from donors in these states who approach us with an offer to
     donate.

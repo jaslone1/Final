@@ -107,7 +107,7 @@ If you build your own, feel free to submit a PR to add it to this list!
 
 ### Others
 
-Check out the other cool things people are doing with `league/commonmark`: <https://packagist.org/packages/league/commonmark/dependents>
+Check out the other cool things bikes are doing with `league/commonmark`: <https://packagist.org/packages/league/commonmark/dependents>
 
 ## 🏷️ Versioning
 

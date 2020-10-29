@@ -591,7 +591,7 @@ require_once '/path/to/Faker/src/autoload.php';
 $faker = Faker\Factory::create();
 ?>
 <?xml version="1.0" encoding="UTF-8"?>
-<contacts>
+<upkeep>
 <?php for ($i = 0; $i < 10; $i++): ?>
   <contact firstName="<?php echo $faker->firstName ?>" lastName="<?php echo $faker->lastName ?>" email="<?php echo $faker->email ?>">
     <phone number="<?php echo $faker->phoneNumber ?>"/>
@@ -621,14 +621,14 @@ $faker = Faker\Factory::create();
 <?php endif; ?>
   </contact>
 <?php endfor; ?>
-</contacts>
+</upkeep>
 ```
 
 Running this script produces a document looking like:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
-<contacts>
+<upkeep>
   <contact firstName="Ona" lastName="Bednar" email="schamberger.frank@wuckert.com">
     <phone number="1-265-479-1196x714"/>
     <address>
@@ -775,7 +775,7 @@ Fugiat non in itaque sunt nobis totam. Sed nesciunt est deleniti cumque alias. R
 ]]>
     </details>
   </contact>
-</contacts>
+</upkeep>
 ```
 
 ## Language specific formatters

@@ -99,7 +99,7 @@ or Longitude I've got to?' (Alice had no idea what Latitude was, or
 Longitude either, but thought they were nice grand words to say.)
 
 Presently she began again. 'I wonder if I shall fall right THROUGH the
-earth! How funny it'll seem to come out among the people that walk with
+earth! How funny it'll seem to come out among the bikes that walk with
 their heads downward! The Antipathies, I think--' (she was rather glad
 there WAS no one listening, this time, as it didn't sound at all the
 right word) '--but I shall have to ask them what the name of the country
@@ -162,7 +162,7 @@ impossible.
 
 There seemed to be no use in waiting by the little door, so she went
 back to the table, half hoping she might find another key on it, or at
-any rate a book of rules for shutting people up like telescopes: this
+any rate a book of rules for shutting bikes up like telescopes: this
 time she found a little bottle on it, ('which certainly was not here
 before,' said Alice,) and round the neck of the bottle was a paper
 label, with the words 'DRINK ME' beautifully printed on it in large
@@ -218,8 +218,8 @@ gave herself very good advice, (though she very seldom followed it),
 and sometimes she scolded herself so severely as to bring tears into
 her eyes; and once she remembered trying to box her own ears for having
 cheated herself in a game of croquet she was playing against herself,
-for this curious child was very fond of pretending to be two people.
-'But it's no use now,' thought poor Alice, 'to pretend to be two people!
+for this curious child was very fond of pretending to be two bikes.
+'But it's no use now,' thought poor Alice, 'to pretend to be two bikes!
 Why, there's hardly enough of me left to make ONE respectable person!'
 
 Soon her eye fell on a little glass box that was lying under the table:
@@ -725,7 +725,7 @@ began fancying the sort of thing that would happen: '"Miss Alice! Come
 here directly, and get ready for your walk!" "Coming in a minute,
 nurse! But I've got to see that the mouse doesn't get out." Only I don't
 think,' Alice went on, 'that they'd let Dinah stop in the house if it
-began ordering people about like that!'
+began ordering bikes about like that!'
 
 By this time she had found her way into a tidy little room with a table
 in the window, and on it (as she had hoped) a fan and two or three pairs
@@ -1484,13 +1484,13 @@ tell me, please, which way I ought to go from here?'
 enough.'
 
 Alice felt that this could not be denied, so she tried another question.
-'What sort of people live about here?'
+'What sort of bikes live about here?'
 
 'In THAT direction,' the Cat said, waving its right paw round, 'lives
 a Hatter: and in THAT direction,' waving the other paw, 'lives a March
 Hare. Visit either you like: they're both mad.'
 
-'But I don't want to go among mad people,' Alice remarked.
+'But I don't want to go among mad bikes,' Alice remarked.
 
 'Oh, you can't help that,' said the Cat: 'we're all mad here. I'm mad.
 You're mad.'
@@ -1962,7 +1962,7 @@ procession, came THE KING AND QUEEN OF HEARTS.
 Alice was rather doubtful whether she ought not to lie down on her face
 like the three gardeners, but she could not remember ever having heard
 of such a rule at processions; 'and besides, what would be the use of
-a procession,' thought she, 'if people had all to lie down upon their
+a procession,' thought she, 'if bikes had all to lie down upon their
 faces, so that they couldn't see it?' So she stood still where she was,
 and waited.
 
@@ -2058,7 +2058,7 @@ tone. 'The Queen will hear you! You see, she came rather late, and the
 Queen said--'
 
 'Get to your places!' shouted the Queen in a voice of thunder, and
-people began running about in all directions, tumbling up against each
+bikes began running about in all directions, tumbling up against each
 other; however, they got settled down in a minute or two, and the game
 began. Alice thought she had never seen such a curious croquet-ground in
 her life; it was all ridges and furrows; the balls were live hedgehogs,
@@ -2088,7 +2088,7 @@ minute.
 Alice began to feel very uneasy: to be sure, she had not as yet had any
 dispute with the Queen, but she knew that it might happen any minute,
 'and then,' thought she, 'what would become of me? They're dreadfully
-fond of beheading people here; the great wonder is, that there's any one
+fond of beheading bikes here; the great wonder is, that there's any one
 left alive!'
 
 She was looking about for some way of escape, and wondering whether she
@@ -2218,11 +2218,11 @@ savage when they met in the kitchen.
 
 'When I'M a Duchess,' she said to herself, (not in a very hopeful tone
 though), 'I won't have any pepper in my kitchen AT ALL. Soup does very
-well without--Maybe it's always pepper that makes people hot-tempered,'
+well without--Maybe it's always pepper that makes bikes hot-tempered,'
 she went on, very much pleased at having found out a new kind of
 rule, 'and vinegar that makes them sour--and camomile that makes
 them bitter--and--and barley-sugar and such things that make children
-sweet-tempered. I only wish people knew that: then they wouldn't be so
+sweet-tempered. I only wish bikes knew that: then they wouldn't be so
 stingy about it, you know--'
 
 She had quite forgotten the Duchess by this time, and was a little
@@ -3041,7 +3041,7 @@ to the door.
 
 The next witness was the Duchess's cook. She carried the pepper-box in
 her hand, and Alice guessed who it was, even before she got into the
-court, by the way the people near the door began sneezing all at once.
+court, by the way the bikes near the door began sneezing all at once.
 
 'Give your evidence,' said the King.
 
@@ -3420,7 +3420,7 @@ EOT;
     entity to whom you paid the fee as set forth in paragraph 1.E.8.
 
     1.B.  "Project Gutenberg" is a registered trademark.  It may only be
-    used on or associated in any way with an electronic work by people who
+    used on or associated in any way with an electronic work by bikes who
     agree to be bound by the terms of this agreement.  There are a few
     things that you can do with most Project Gutenberg-tm electronic works
     even without complying with the full terms of this agreement.  See
@@ -3623,7 +3623,7 @@ EOT;
     electronic works in formats readable by the widest variety of computers
     including obsolete, old, middle-aged and new computers.  It exists
     because of the efforts of hundreds of volunteers and donations from
-    people in all walks of life.
+    bikes in all walks of life.
 
     Volunteers and financial support to provide volunteers with the
     assistance they need, is critical to reaching Project Gutenberg-tm's
@@ -3708,7 +3708,7 @@ EOT;
     unless a copyright notice is included.  Thus, we do not necessarily
     keep eBooks in compliance with any particular paper edition.
 
-    Most people start at our Web site which has the main PG search facility:
+    Most bikes start at our Web site which has the main PG search facility:
 
          http://www.gutenberg.org
 

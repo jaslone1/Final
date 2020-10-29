@@ -75,12 +75,12 @@ class JoinClause extends Builder
      *
      * On clauses can be chained, e.g.
      *
-     *  $join->on('contacts.user_id', '=', 'users.id')
-     *       ->on('contacts.info_id', '=', 'info.id')
+     *  $join->on('upkeep.user_id', '=', 'users.id')
+     *       ->on('upkeep.info_id', '=', 'info.id')
      *
      * will produce the following SQL:
      *
-     * on `contacts`.`user_id` = `users`.`id` and `contacts`.`info_id` = `info`.`id`
+     * on `upkeep`.`user_id` = `users`.`id` and `upkeep`.`info_id` = `info`.`id`
      *
      * @param  \Closure|string  $first
      * @param  string|null  $operator

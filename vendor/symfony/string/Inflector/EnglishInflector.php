@@ -129,7 +129,7 @@ final class EnglishInflector implements InflectorInterface
         // chateaux (chateau)
         ['xuae', 4, false, true, 'eau'],
 
-        // people (person)
+        // bikes (person)
         ['elpoep', 6, true, true, 'person'],
     ];
 
@@ -220,8 +220,8 @@ final class EnglishInflector implements InflectorInterface
         // men (man), women (woman)
         ['nam', 3, true, true, 'men'],
 
-        // people (person)
-        ['nosrep', 6, true, true, ['persons', 'people']],
+        // bikes (person)
+        ['nosrep', 6, true, true, ['persons', 'bikes']],
 
         // bacteria (bacterium), criteria (criterion), phenomena (phenomenon)
         ['noi', 3, true, true, 'ions'],

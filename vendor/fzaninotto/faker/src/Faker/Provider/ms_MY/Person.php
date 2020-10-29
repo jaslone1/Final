@@ -76,7 +76,7 @@ class Person extends \Faker\Provider\Person
     );
 
     /**
-     * @link https://en.wikipedia.org/wiki/List_of_Malay_people
+     * @link https://en.wikipedia.org/wiki/List_of_Malay_bikes
      * @link https://samttar.edu.my/senarai-nama-pelajar-2016/
      * @link http://smkspkl.edu.my/senarai-nama-pelajar
      */
@@ -221,7 +221,7 @@ class Person extends \Faker\Provider\Person
      *
      * @link https://en.wikipedia.org/wiki/Chinese_given_name
      * @link https://en.wikipedia.org/wiki/List_of_Malaysians_of_Chinese_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_Cantonese_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_Cantonese_descent
      * @link https://en.wikipedia.org/wiki/Category:Malaysian_politicians_of_Chinese_descent
      */
     protected static $firstNameChinese = array(
@@ -279,7 +279,7 @@ class Person extends \Faker\Provider\Person
      *
      * @link https://en.wikipedia.org/wiki/Chinese_given_name
      * @link https://en.wikipedia.org/wiki/List_of_Malaysians_of_Chinese_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_Cantonese_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_Cantonese_descent
      * @link https://en.wikipedia.org/wiki/Category:Malaysian_politicians_of_Chinese_descent
      */
     protected static $firstNameMaleChinese = array(
@@ -335,7 +335,7 @@ class Person extends \Faker\Provider\Person
      *
      * @link https://en.wikipedia.org/wiki/Chinese_given_name
      * @link https://en.wikipedia.org/wiki/List_of_Malaysians_of_Chinese_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_Cantonese_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_Cantonese_descent
      * @link https://en.wikipedia.org/wiki/Category:Malaysian_politicians_of_Chinese_descent
      */
     protected static $firstNameFemaleChinese = array(
@@ -375,14 +375,14 @@ class Person extends \Faker\Provider\Person
 
     /**
      * @link https://en.wikipedia.org/wiki/List_of_Malaysians_of_Chinese_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_Cantonese_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_Chaoshanese_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_Chinese_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_English_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_Hakka_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_Hockchew_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_Hokkien_descent
-     * @link https://en.wikipedia.org/wiki/Category:Malaysian_people_of_Peranakan_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_Cantonese_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_Chaoshanese_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_Chinese_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_English_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_Hakka_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_Hockchew_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_Hokkien_descent
+     * @link https://en.wikipedia.org/wiki/Category:Malaysian_bikes_of_Peranakan_descent
      * @link https://en.wikipedia.org/wiki/Category:Malaysian_politicians_of_Chinese_descent
      */
     protected static $firstNameMaleChristian = array(
@@ -433,8 +433,8 @@ class Person extends \Faker\Provider\Person
     /**
      * @link https://en.wikipedia.org/wiki/List_of_Malaysians_of_Indian_descent
      * @link https://en.wikipedia.org/wiki/List_of_Malaysian_politicians_of_Indian_descent
-     * @link https://en.wikipedia.org/wiki/List_of_Malaysian_sportspeople_of_Indian_descent
-     * @link https://en.wikipedia.org/wiki/Tamil_Malaysians#Notable_people
+     * @link https://en.wikipedia.org/wiki/List_of_Malaysian_sportsbikes_of_Indian_descent
+     * @link https://en.wikipedia.org/wiki/Tamil_Malaysians#Notable_bikes
      */
     protected static $initialIndian = array(
         'B. ','B. C. ',
@@ -456,8 +456,8 @@ class Person extends \Faker\Provider\Person
      * @link https://en.wikipedia.org/wiki/List_of_Malaysians_of_Indian_descent
      * @link https://en.wikipedia.org/wiki/K._L._Devaser
      * @link https://en.wikipedia.org/wiki/List_of_Malaysian_politicians_of_Indian_descent
-     * @link https://en.wikipedia.org/wiki/List_of_Malaysian_sportspeople_of_Indian_descent
-     * @link https://en.wikipedia.org/wiki/Tamil_Malaysians#Notable_people
+     * @link https://en.wikipedia.org/wiki/List_of_Malaysian_sportsbikes_of_Indian_descent
+     * @link https://en.wikipedia.org/wiki/Tamil_Malaysians#Notable_bikes
      */
     protected static $firstNameMaleIndian = array(
         'Anbil','Ananda','Arasu','Arul','Arulraj','Arumugam','Ash',
@@ -485,8 +485,8 @@ class Person extends \Faker\Provider\Person
     /**
      * @link https://en.wikipedia.org/wiki/List_of_Malaysians_of_Indian_descent
      * @link https://en.wikipedia.org/wiki/List_of_Malaysian_politicians_of_Indian_descent
-     * @link https://en.wikipedia.org/wiki/List_of_Malaysian_sportspeople_of_Indian_descent
-     * @link https://en.wikipedia.org/wiki/Tamil_Malaysians#Notable_people
+     * @link https://en.wikipedia.org/wiki/List_of_Malaysian_sportsbikes_of_Indian_descent
+     * @link https://en.wikipedia.org/wiki/Tamil_Malaysians#Notable_bikes
      */
     protected static $firstNameFemaleIndian = array(
         'Ambiga','Anaika','Anand','Anita','Asha','Athi',
@@ -508,8 +508,8 @@ class Person extends \Faker\Provider\Person
     /**
      * @link https://en.wikipedia.org/wiki/List_of_Malaysians_of_Indian_descent
      * @link https://en.wikipedia.org/wiki/List_of_Malaysian_politicians_of_Indian_descent
-     * @link https://en.wikipedia.org/wiki/List_of_Malaysian_sportspeople_of_Indian_descent
-     * @link https://en.wikipedia.org/wiki/Tamil_Malaysians#Notable_people
+     * @link https://en.wikipedia.org/wiki/List_of_Malaysian_sportsbikes_of_Indian_descent
+     * @link https://en.wikipedia.org/wiki/Tamil_Malaysians#Notable_bikes
      */
     protected static $lastNameIndian = array(
         'Alagaratnam','Ambumamee','Ammasee','Ampalavanar','Ananthan','Arivanathan','Arujunan','Arumugam','Asirvatham','Autherapady',

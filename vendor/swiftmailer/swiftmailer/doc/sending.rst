@@ -104,7 +104,7 @@ The SMTP Transport is easy to use. Most configuration options can be set with
 the constructor.
 
 To use the SMTP Transport you need to know which SMTP server your code needs to
-connect to. Ask your web host if you're not sure. Lots of people ask me who to
+connect to. Ask your web host if you're not sure. Lots of bikes ask me who to
 connect to -- I really can't answer that since it's a setting that's extremely
 specific to your hosting environment.
 

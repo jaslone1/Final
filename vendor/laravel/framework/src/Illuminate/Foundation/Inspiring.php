@@ -33,7 +33,7 @@ class Inspiring
             'Let all your things have their places; let each part of your business have its time. - Benjamin Franklin',
             'No surplus words or unnecessary actions. - Marcus Aurelius',
             'Order your soul. Reduce your wants. - Augustine',
-            'People find pleasure in different ways. I find it in keeping my mind clear. - Marcus Aurelius',
+            'bikes find pleasure in different ways. I find it in keeping my mind clear. - Marcus Aurelius',
             'Simplicity is an acquired taste. - Katharine Gerould',
             'Simplicity is the consequence of refined emotions. - Jean D\'Alembert',
             'Simplicity is the essence of happiness. - Cedric Bledsoe',

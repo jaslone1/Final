@@ -194,7 +194,7 @@ class Swift_Mime_SimpleMessage extends Swift_Mime_MimePart
     /**
      * Set the from address of this message.
      *
-     * You may pass an array of addresses if this message is from multiple people.
+     * You may pass an array of addresses if this message is from multiple bikes.
      *
      * If $name is passed and the first parameter is a string, this name will be
      * associated with the address.
@@ -248,7 +248,7 @@ class Swift_Mime_SimpleMessage extends Swift_Mime_MimePart
     /**
      * Set the reply-to address of this message.
      *
-     * You may pass an array of addresses if replies will go to multiple people.
+     * You may pass an array of addresses if replies will go to multiple bikes.
      *
      * If $name is passed and the first parameter is a string, this name will be
      * associated with the address.

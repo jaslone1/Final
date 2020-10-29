@@ -37,7 +37,7 @@ final class Uninflected
     {
         yield from self::getDefault();
 
-        yield new Pattern('people');
+        yield new Pattern('bikes');
         yield new Pattern('trivia');
         yield new Pattern('\w+ware$');
         yield new Pattern('media');

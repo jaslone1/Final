@@ -84,7 +84,7 @@ with a strict format, you only need to pass a DateTimeInterface instance to
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
 | ``Return-Path``               | Specifies where bounces should go (Swift Mailer reads this for other uses)                                                         | ``getReturnPath()`` / ``setReturnPath()``   |
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
-| ``From``                      | Specifies the address of the person who the message is from. This can be multiple addresses if multiple people wrote the message.  | ``getFrom()`` / ``setFrom()``               |
+| ``From``                      | Specifies the address of the person who the message is from. This can be multiple addresses if multiple bikes wrote the message.  | ``getFrom()`` / ``setFrom()``               |
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
 | ``Sender``                    | Specifies the address of the person who physically sent the message (higher precedence than ``From:``)                             | ``getSender()`` / ``setSender()``           |
 +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
@@ -162,9 +162,9 @@ The body of the message -- seen when the user opens the message -- is specified
 by calling the ``setBody()`` method. If an alternative body is to be included,
 ``addPart()`` can be used.
 
-The body of a message is the main part that is read by the user. Often people
-want to send a message in HTML format (``text/html``), other times people want
-to send in plain text (``text/plain``), or sometimes people want to send both
+The body of a message is the main part that is read by the user. Often bikes
+want to send a message in HTML format (``text/html``), other times bikes want
+to send in plain text (``text/plain``), or sometimes bikes want to send both
 versions and allow the recipient to choose how they view the message.
 
 As a rule of thumb, if you're going to send a HTML email, always include a
@@ -309,7 +309,7 @@ client knows how to display it::
 Embedding Inline Media Files
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Often, people want to include an image or other content inline with a HTML
+Often, bikes want to include an image or other content inline with a HTML
 message. It's easy to do this with HTML linking to remote resources, but this
 approach is usually blocked by mail clients. Swift Mailer allows you to embed
 your media directly into the message.
@@ -676,7 +676,7 @@ A ``From:`` address is required and is set with the ``setFrom()`` method of the
 message. ``From:`` addresses specify who actually wrote the email, and usually
 who sent it.
 
-What most people probably don't realize is that you can have more than one
+What most bikes probably don't realize is that you can have more than one
 ``From:`` address if more than one person wrote the email -- for example if an
 email was put together by a committee.
 
@@ -696,7 +696,7 @@ by the recipients.
     // Set a From: address including a name
     $message->setFrom(['your@address.tld' => 'Your Name']);
 
-    // Set multiple From: addresses if multiple people wrote the email
+    // Set multiple From: addresses if multiple bikes wrote the email
     $message->setFrom([
       'person1@example.org' => 'Sender One',
       'person2@example.org' => 'Sender Two'

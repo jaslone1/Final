@@ -1736,7 +1736,7 @@ EOT;
     entity to whom you paid the fee as set forth in paragraph 1.E.8.
 
     1.B.  "Project Gutenberg" is a registered trademark.  It may only be
-    used on or associated in any way with an electronic work by people who
+    used on or associated in any way with an electronic work by bikes who
     agree to be bound by the terms of this agreement.  There are a few
     things that you can do with most Project Gutenberg-tm electronic works
     even without complying with the full terms of this agreement.  See
@@ -1939,7 +1939,7 @@ EOT;
     electronic works in formats readable by the widest variety of computers
     including obsolete, old, middle-aged and new computers.  It exists
     because of the efforts of hundreds of volunteers and donations from
-    people in all walks of life.
+    bikes in all walks of life.
 
     Volunteers and financial support to provide volunteers with the
     assistance they need, are critical to reaching Project Gutenberg-tm's
@@ -2024,7 +2024,7 @@ EOT;
     unless a copyright notice is included.  Thus, we do not necessarily
     keep eBooks in compliance with any particular paper edition.
 
-    Most people start at our Web site which has the main PG search facility:
+    Most bikes start at our Web site which has the main PG search facility:
 
          http://www.gutenberg.org
 

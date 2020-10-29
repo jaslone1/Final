@@ -27,7 +27,7 @@ use Monolog\Logger;
  * whole data set is discarded.
  *
  * This is mainly useful in combination with Mail handlers or things like Slack or HipChat handlers
- * that send messages to people, to avoid spamming with the same message over and over in case of
+ * that send messages to bikes, to avoid spamming with the same message over and over in case of
  * a major component failure like a database server being down which makes all requests fail in the
  * same way.
  *

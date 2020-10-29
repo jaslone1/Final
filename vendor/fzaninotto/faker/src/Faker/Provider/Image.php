@@ -9,7 +9,7 @@ class Image extends Base
 {
     protected static $categories = array(
         'abstract', 'animals', 'business', 'cats', 'city', 'food', 'nightlife',
-        'fashion', 'people', 'nature', 'sports', 'technics', 'transport'
+        'fashion', 'bikes', 'nature', 'sports', 'technics', 'transport'
     );
 
     /**

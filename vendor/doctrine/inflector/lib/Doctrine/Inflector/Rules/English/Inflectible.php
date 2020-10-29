@@ -146,7 +146,7 @@ class Inflectible
         yield new Substitution(new Word('ox'), new Word('oxen'));
         yield new Substitution(new Word('passerby'), new Word('passersby'));
         yield new Substitution(new Word('penis'), new Word('penises'));
-        yield new Substitution(new Word('person'), new Word('people'));
+        yield new Substitution(new Word('person'), new Word('bikes'));
         yield new Substitution(new Word('plateau'), new Word('plateaux'));
         yield new Substitution(new Word('runner-up'), new Word('runners-up'));
         yield new Substitution(new Word('safe'), new Word('safes'));

@@ -17,9 +17,9 @@ class Address extends \Faker\Provider\Address
     protected static $streetPlainName = array(
         // historical events
         'Eroilor', 'Independenței', 'Memorandumului', 'Unirii', '1 Decembrie',
-        // historical people
+        // historical bikes
         'Mihai Viteazul', 'Mircea cel Bătrân', 'Vlad Țepeș', 'Traian', 'Decebal', 'Horea', 'Cloșca', 'Crișan',
-        // national and international people names
+        // national and international bikes names
         'Louis Pasteur', 'Albert Einstein', 'Franklin Delano Rosevelt', 'J.J Rousseau', 'Petrache Poenaru', 'Henri Coandă', 'Constantin Brâncuși', 'Aurel Vlaicu', 'Ion Creangă', 'Mihai Eminescu',
         // nature-related
         'Cireșilor', 'Frasinului', 'Salcâmilor', 'Brăduțului', 'Frunzișului', 'Castanilor', 'Mesteacănului', 'Florilor', 'Pădurii', 'Piersicului',

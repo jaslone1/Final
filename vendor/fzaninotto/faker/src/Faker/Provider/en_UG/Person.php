@@ -5,7 +5,7 @@ namespace Faker\Provider\en_UG;
 class Person extends \Faker\Provider\Person
 {
     /**
-     * It is very common in Uganda for people to arrange their names as
+     * It is very common in Uganda for bikes to arrange their names as
      * lastname(surname) firstname
      */
     protected static $maleNameFormats = array(
@@ -16,7 +16,7 @@ class Person extends \Faker\Provider\Person
     );
 
     /**
-     * It is very common in Uganda for people to arrange their names as
+     * It is very common in Uganda for bikes to arrange their names as
      * lastname(surname) firstname
      */
     protected static $femaleNameFormats = array(
