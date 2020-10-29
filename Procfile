@@ -1,1 +1,0 @@
-gunicorn Final.wsgi
