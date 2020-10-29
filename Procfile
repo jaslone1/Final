@@ -1,1 +1,1 @@
-web: gunicorn django_rest_api.wsgi
+gunicorn django_rest_api.wsgi
