@@ -98,9 +98,9 @@ class App extends React.Component {
                     (bike, index) => {
                         return <li key={index}>
 
-                            {bike.brand}
-                            {bike.model}
-                            {bike.maintenance}
+                            {bike.brand}<br />
+                            {bike.model}<br />
+                            {bike.maintenance}<br />
 
                             <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
 

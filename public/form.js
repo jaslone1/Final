@@ -110,7 +110,7 @@ class Form extends React.Component {
             <form onSubmit={this.createBike}>
                 <input onKeyUp={this.changeNewBikeBrand} type="text" placeholder="brand" /><br/>
                 <input onKeyUp={this.changeNewBikeModel} type="text" placeholder="models" /><br/>
-                <input onKeyUp={this.changeNewBikeMaintenance} type="textarea" placeholder="models" /><br/>
+                <input onKeyUp={this.changeNewBikeMaintenance} type="textarea" placeholder="maintenance notes" /><br/>
                 <input type="submit" value="Create Bike" />
             </form>
         </div>

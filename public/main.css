@@ -10,3 +10,6 @@ footer {
   background: black;
   color: white;
 }
+.ul {
+  list-style: none;
+}
