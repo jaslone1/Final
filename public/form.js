@@ -21,7 +21,7 @@ class Form extends React.Component {
                 brand:this.state.newBikeBrand,
                 model:this.state.newBikeModel,
                 maintenance:this.state.newBikeMaintenance,
-                owner:this.state.newBikeOwner
+                owner:this.state.newBikeOwner,
             }
         ).then(
             (response) => {
