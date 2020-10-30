@@ -47,6 +47,11 @@ class Form extends React.Component {
             newBikeMaintenance:event.target.value
         });
     }
+    changeNewBikeOwner = (event) => {
+        this.setState({
+            newBikeOwner:event.target.value
+        });
+    }
 
     deleteBike = (event) => {
         axios.delete('/api/bikes/' + event.target.value).then(

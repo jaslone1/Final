@@ -101,15 +101,9 @@ class App extends React.Component {
                             {bike.brand}<br />
                             {bike.model}<br />
                             {bike.maintenance}<br />
+                            {bike.owner}<br />
 
                             <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
-
-                            <form id={bike.id} onSubmit={this.updateBike}>
-                                <input onKeyUp={this.changeUpdateBikeBrand} type="text" placeholder="brand"/><br/>
-                                <input onKeyUp={this.changeUpdateBikeModel} type="text" placeholder="models"/><br/>
-                                  <input onKeyUp={this.changeUpdateBikeMaintenance} type="text" placeholder="maintenance"/><br/>
-                                <input type="submit" value="Update Bike"/>
-                            </form>
                         </li>
                     }
                 )

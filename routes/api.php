@@ -20,7 +20,7 @@ Route::get('bikes', function () {
 });
 
 Route::post('bikes', function (Request $request) {
-    DB::insert('INSERT INTO bikes (brand, model) VALUES (?, ?)', [$request->brand, $request->model]);
+    DB::insert('INSERT INTO bikes (brand, model, maintenance, owner) VALUES (?, ?)', [$request->brand, $request->model, $request->maintenance, $request->owner]);
     $bikes = DB::select('SELECT * FROM bikes ORDER BY id ASC');
     return $bikes;
 });
@@ -32,7 +32,7 @@ Route::delete('bikes/{id}', function ($id) {
 });
 
 Route::put('bikes/{id}', function (Request $request, $id) {
-    DB::update('UPDATE bikes SET brand=?, model=? WHERE id = ?', [$request->brand, $request->model, $id]);
+    DB::update('UPDATE bikes SET brand=?, model=? owner=? maintenance=? WHERE id = ?', [$request->brand, $request->model, $request->owner, $request->maintenance, $id]);
     $bikes = DB::select('SELECT * FROM bikes ORDER BY id ASC');
     return $bikes;
 });
