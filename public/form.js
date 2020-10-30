@@ -1,4 +1,4 @@
-class App extends React.Component {
+class Form extends React.Component {
     state = {
         bikes:[]
     }
@@ -91,14 +91,23 @@ class App extends React.Component {
 
     render = () => {
         return <div>
+            <h2>Create Bike</h2>
+            <form onSubmit={this.createBike}>
+                <input onKeyUp={this.changeNewBikeBrand} type="text" placeholder="brand" /><br/>
+                <input onKeyUp={this.changeNewBikeModel} type="text" placeholder="models" /><br/>
+                <input type="submit" value="Create Bike" />
+            </form>
             <h2>List of Bikes</h2>
             <ul>
                 {
                     this.state.bikes.map(
                         (bike, index) => {
                             return <li key={index}>
+
                                 {bike.brand}: {bike.models}
+
                                 <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
+
                                 <form id={bike.id} onSubmit={this.updateBike}>
                                     <input onKeyUp={this.changeUpdateBikeBrand} type="text" placeholder="brand"/><br/>
                                     <input onKeyUp={this.changeUpdateBikeModel} type="text" placeholder="models"/><br/>
@@ -114,6 +123,6 @@ class App extends React.Component {
 }
 
 ReactDOM.render(
-    <App></App>,
-    document.querySelector('main')
+    <Form></Form>,
+    document.querySelector('form')
 )
