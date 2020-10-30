@@ -21,6 +21,7 @@ class Form extends React.Component {
                 brand:this.state.newBikeBrand,
                 model:this.state.newBikeModel,
                 maintenance:this.state.newBikeMaintenance,
+                owner:this.state.newBikeOwner,
             }
         ).then(
             (response) => {
@@ -51,63 +52,6 @@ class Form extends React.Component {
         this.setState({
             newBikeOwner:event.target.value
         });
-    }
-
-    deleteBike = (event) => {
-        axios.delete('/api/bikes/' + event.target.value).then(
-            (response) => {
-                this.setState({
-                    bikes:response.data
-                })
-            }
-        )
-
-    }
-
-    updateBike = (event) => {
-        event.preventDefault();
-        const id = event.target.getAttribute('id');
-        axios.put(
-            '/api/bikes/' + id,
-            {
-                brand:this.state.updateBikeBrand,
-                model:this.state.updateBikeModel,
-                maintenance:this.state.updateBikeMaintenance,
-                owner:this.state.updateBikeOwner,
-            }
-        ).then(
-            (response) => {
-                this.setState({
-                    bikes:response.data,
-                    brand:'',
-                    model:'',
-                    maintenance:'',
-                })
-            }
-        )
-    }
-
-    changeUpdateBikeBrand = (event) => {
-        this.setState(
-            {
-                updateBikeBrand:event.target.value
-            }
-        )
-    }
-
-    changeUpdateBikeModel = (event) => {
-        this.setState(
-            {
-                updateBikeModel:event.target.value
-            }
-        )
-    }
-    changeUpdateBikeMaintenance = (event) => {
-        this.setState(
-            {
-                updateBikeMaintenance:event.target.value
-            }
-        )
     }
 
     render = () => {
