@@ -92,11 +92,11 @@ class App extends React.Component {
     render = () => {
         return <div>
         <h2>List of Bikes</h2>
-        <ul>
+        <ul class="thumbnails">
             {
                 this.state.bikes.map(
                     (bike, index) => {
-                        return <li key={index}>
+                        return <li class="span4" key={index}>
 
                             {bike.brand}<br />
                             {bike.model}<br />
