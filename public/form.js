@@ -31,29 +31,6 @@ class Form extends React.Component {
             }
         )
     }
-    updateBike = (event) => {
-        event.preventDefault();
-        const id = event.target.getAttribute('id');
-        axios.put(
-            '/api/bikes/' + id,
-            {
-                brand:this.state.updateBikeBrand,
-                models:this.state.updateBikeModel,
-                maintenance:this.state.updateBikeMaintenance,
-                owner:this.state.updateBikeOwner,
-            }
-        ).then(
-            (response) => {
-                this.setState({
-                    bikes:response.data,
-                    brand:'',
-                    models:'',
-                    maintenance:'',
-                    owner:'',
-                })
-            }
-        )
-    }
 
     changeNewBikeModel = (event) => {
         this.setState({
@@ -75,6 +52,30 @@ class Form extends React.Component {
         this.setState({
             newBikeOwner:event.target.value
         });
+    }
+
+    updateBike = (event) => {
+        event.preventDefault();
+        const id = event.target.getAttribute('id');
+        axios.put(
+            '/api/bikes/' + id,
+            {
+                brand:this.state.updateBikeBrand,
+                model:this.state.updateBikeModel,
+                maintenance:this.state.updateBikeMaintenance,
+                owner:this.state.updateBikeOwner,
+            }
+        ).then(
+            (response) => {
+                this.setState({
+                    bikes:response.data,
+                    brand:'',
+                    models:'',
+                    maintenance:'',
+                    owner:'',
+                })
+            }
+        )
     }
 
     render = () => {
