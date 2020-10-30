@@ -20,6 +20,8 @@ class App extends React.Component {
             {
                 brand:this.state.newBikeBrand,
                 models:this.state.newBikeModel,
+                owner:this.state.newBikeOwner,
+                maintenance:this.state.newBikeMaintenance,
             }
         ).then(
             (response) => {
@@ -39,6 +41,16 @@ class App extends React.Component {
     changeNewBikeBrand = (event) => {
         this.setState({
             newBikeBrand:event.target.value
+        });
+    }
+    changeNewBikeMaintenance = (event) => {
+        this.setState({
+            newBikeMaintenance:event.target.value
+        });
+    }
+    changeNewBikeOwner = (event) => {
+        this.setState({
+            newBikeOwner:event.target.value
         });
     }
 
@@ -61,6 +73,8 @@ class App extends React.Component {
             {
                 brand:this.state.updateBikeBrand,
                 models:this.state.updateBikeModel,
+                maintenance:this.state.updateBikeMaintenance,
+                owner:this.state.updateBikeOwner,
             }
         ).then(
             (response) => {
@@ -68,6 +82,8 @@ class App extends React.Component {
                     bikes:response.data,
                     brand:'',
                     models:'',
+                    maintenance:'',
+                    owner:'',
                 })
             }
         )
@@ -85,6 +101,22 @@ class App extends React.Component {
         this.setState(
             {
                 updateBikeModel:event.target.value
+            }
+        )
+    }
+
+    changeUpdateBikeOwner = (event) => {
+        this.setState(
+            {
+                updateBikeOwner:event.target.value
+            }
+        )
+    }
+
+    changeUpdateBikeMaintenance = (event) => {
+        this.setState(
+            {
+                updateBikeMaintenance:event.target.value
             }
         )
     }
