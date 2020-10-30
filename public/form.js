@@ -21,7 +21,7 @@ class Form extends React.Component {
                 brand:this.state.newBikeBrand,
                 model:this.state.newBikeModel,
                 maintenance:this.state.newBikeMaintenance,
-                owner:this.state.newBikeOwner,
+                owner:this.state.newBikeOwner
             }
         ).then(
             (response) => {
@@ -60,7 +60,7 @@ class Form extends React.Component {
             <form onSubmit={this.createBike}>
                 <input onKeyUp={this.changeNewBikeBrand} type="text" placeholder="brand" /><br/>
                 <input onKeyUp={this.changeNewBikeModel} type="text" placeholder="models" /><br/>
-                <input onKeyUp={this.changeNewBikeMaintenance} type="textarea" placeholder="maintenance notes" /><br/>
+                <input onKeyUp={this.changeNewBikeMaintenance} type="text" placeholder="maintenance notes" /><br/>
                 <input onKeyUp={this.changeNewBikeOwner} type="text" placeholder="owner" /><br/>
                 <input type="submit" value="Create Bike" />
             </form>
