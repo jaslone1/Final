@@ -20,7 +20,7 @@ Route::get('bikes', function () {
 });
 
 Route::post('bikes', function (Request $request) {
-    DB::insert('INSERT INTO bikes (brand, model, maintenance, owner) VALUES (?, ?)', [$request->brand, $request->model, $request->maintenance, $request->owner]);
+    DB::insert('INSERT INTO bikes (brand, model, owner, maintenance) VALUES (?, ?, ?, ?)', [$request->brand, $request->model, $request->maintenance, $request->owner]);
     $bikes = DB::select('SELECT * FROM bikes ORDER BY id ASC');
     return $bikes;
 });

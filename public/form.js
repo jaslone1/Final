@@ -54,36 +54,12 @@ class Form extends React.Component {
         });
     }
 
-    updateBike = (event) => {
-        event.preventDefault();
-        const id = event.target.getAttribute('id');
-        axios.put(
-            '/api/bikes/' + id,
-            {
-                brand:this.state.updateBikeBrand,
-                model:this.state.updateBikeModel,
-                maintenance:this.state.updateBikeMaintenance,
-                owner:this.state.updateBikeOwner,
-            }
-        ).then(
-            (response) => {
-                this.setState({
-                    bikes:response.data,
-                    brand:'',
-                    model:'',
-                    maintenance:'',
-                    owner:'',
-                })
-            }
-        )
-    }
-
     render = () => {
         return <div>
             <h2>Add a new Bike</h2>
             <form onSubmit={this.createBike}>
                 <input onKeyUp={this.changeNewBikeBrand} type="text" placeholder="brand" /><br/>
-                <input onKeyUp={this.changeNewBikeModel} type="text" placeholder="models" /><br/>
+                <input onKeyUp={this.changeNewBikeModel} type="text" placeholder="model" /><br/>
                 <input onKeyUp={this.changeNewBikeMaintenance} type="text" placeholder="maintenance notes" /><br/>
                 <input onKeyUp={this.changeNewBikeOwner} type="text" placeholder="owner" /><br/>
                 <input type="submit" value="Create Bike" />
