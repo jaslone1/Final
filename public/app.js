@@ -91,24 +91,28 @@ class App extends React.Component {
 
     render = () => {
         return <div>
-            <h2>List of Bikes</h2>
-            <ul>
-                {
-                    this.state.bikes.map(
-                        (bike, index) => {
-                            return <li key={index}>
-                                {bike.brand}: {bike.models}
-                                <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
-                                <form id={bike.id} onSubmit={this.updateBike}>
-                                    <input onKeyUp={this.changeUpdateBikeBrand} type="text" placeholder="brand"/><br/>
-                                    <input onKeyUp={this.changeUpdateBikeModel} type="text" placeholder="models"/><br/>
-                                    <input type="submit" value="Update Bike"/>
-                                </form>
-                            </li>
-                        }
-                    )
-                }
-            </ul>
+        <h2>List of Bikes</h2>
+        <ul>
+            {
+                this.state.bikes.map(
+                    (bike, index) => {
+                        return <li key={index}>
+
+                            {bike.brand}: {bike.model}
+
+                            <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
+
+                            <form id={bike.id} onSubmit={this.updateBike}>
+                                <input onKeyUp={this.changeUpdateBikeBrand} type="text" placeholder="brand"/><br/>
+                                <input onKeyUp={this.changeUpdateBikeModel} type="text" placeholder="models"/><br/>
+                                  <input onKeyUp={this.changeUpdateBikeMaintenance} type="text" placeholder="maintenance"/><br/>
+                                <input type="submit" value="Update Bike"/>
+                            </form>
+                        </li>
+                    }
+                )
+            }
+        </ul>
         </div>
     }
 }
