@@ -19,7 +19,7 @@ class App extends React.Component {
             '/api/bikes',
             {
                 brand:this.state.newBikeBrand,
-                models:this.state.newBikeModel,
+                model:this.state.newBikeModel,
                 owner:this.state.newBikeOwner,
                 maintenance:this.state.newBikeMaintenance,
             }
@@ -72,7 +72,7 @@ class App extends React.Component {
             '/api/bikes/' + id,
             {
                 brand:this.state.updateBikeBrand,
-                models:this.state.updateBikeModel,
+                model:this.state.updateBikeModel,
                 maintenance:this.state.updateBikeMaintenance,
                 owner:this.state.updateBikeOwner,
             }

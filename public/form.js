@@ -70,7 +70,7 @@ class Form extends React.Component {
                 this.setState({
                     bikes:response.data,
                     brand:'',
-                    models:'',
+                    model:'',
                     maintenance:'',
                     owner:'',
                 })
