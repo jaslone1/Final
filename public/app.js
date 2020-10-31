@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Accordian from 'react-bootstrap/Accordian';
 
 class App extends React.Component {
