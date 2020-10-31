@@ -10,6 +10,6 @@ footer {
   background: black;
   color: white;
 }
-.li {
+li.span4 {
   list-style: none;
 }
