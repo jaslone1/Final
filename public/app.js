@@ -1,5 +1,3 @@
-import Accordian from 'react-bootstrap/Accordian';
-
 class App extends React.Component {
 
     state = {
@@ -131,7 +129,7 @@ class App extends React.Component {
             {
                 this.state.bikes.map(
                     (bike, index) => {
-                        return <li class="span4" key={index}>
+                        return <li key={index}>
                         <Accordion defaultActiveKey="0">
                           <Card>
                             <Card.Header>
