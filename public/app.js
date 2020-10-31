@@ -127,7 +127,7 @@ class App extends React.Component {
             {
                 this.state.bikes.map(
                     (bike, index) => {
-                        return  <div class="card" style={{width: 20 + 'rem'}} key={index}>
+                        return  <div class="card" style={{width: 40 + '%'}} key={index}>
                           <div class="card-body">
                             <h4 class="card-title"> Owner: {bike.owner}</h4>
                               <p class="card-text">
