@@ -127,7 +127,6 @@ class App extends React.Component {
 
     render = () => {
         return <div>
-        <h2>List of Bikes</h2>
         <ul>
             {
                 this.state.bikes.map(
