@@ -1,4 +1,4 @@
-import {Accordion, Card} from 'react-bootstrap';
+import {  Accordion, Card } from 'react-bootstrap';
 
 class App extends React.Component {
 
@@ -132,7 +132,7 @@ class App extends React.Component {
                     (bike, index) => {
                         return <li key={index}>
                         // <Accordion defaultActiveKey="0">
-                          <Card>
+                          // <Card>
                         //     <Card.Header>
                         //       <Accordion.Toggle as={Button} variant="link" eventKey="0">
                                 Owner: {bike.owner}<br />
@@ -146,7 +146,7 @@ class App extends React.Component {
                               <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
                           //     </Card.Body>
                           //   </Accordion.Collapse>
-                          </Card>
+                          // </Card>
                           // </Accordion>
                           </li>
                     }
