@@ -129,14 +129,25 @@ class App extends React.Component {
                 this.state.bikes.map(
                     (bike, index) => {
                         return <li class="span4" key={index}>
+                        <Accordion defaultActiveKey="0">
+                          <Card>
+                            <Card.Header>
+                              <Accordion.Toggle as={Button} variant="link" eventKey="0">
+                                Owner: {bike.owner}<br />
+                              </Accordion.Toggle>
+                            </Card.Header>
+                            <Accordion.Collapse eventKey="0">
+                              <Card.Body>
+                              Brand: {bike.brand}<br />
+                              Model: {bike.model}<br />
+                              Maintenance notes: {bike.maintenance}<br />
+                              <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
+                            </li>
+                              </Card.Body>
+                            </Accordion.Collapse>
+                          </Card>
+                          </Accordion>
 
-                            Owner: {bike.owner}<br />
-                            Brand: {bike.brand}<br />
-                            Model: {bike.model}<br />
-                            Maintenance notes: {bike.maintenance}<br />
-
-                            <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
-                        </li>
                     }
                 )
             }
