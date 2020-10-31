@@ -1,3 +1,4 @@
+import Accorddian from 'react-bootstrap/Accordian';
 class App extends React.Component {
     state = {
         bikes:[]
@@ -142,7 +143,7 @@ class App extends React.Component {
                               Model: {bike.model}<br />
                               Maintenance notes: {bike.maintenance}<br />
                               <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
-                              </Card.Body>                         
+                              </Card.Body>
                             </Accordion.Collapse>
                           </Card>
                           </Accordion>
