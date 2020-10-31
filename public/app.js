@@ -1,3 +1,4 @@
+import { Card } from 'react-bootstrap';
 class App extends React.Component {
 
     state = {
