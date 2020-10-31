@@ -16,7 +16,9 @@ li.span4 {
 .container{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  min-width: 100%;
 }
 .card{
-  min-width: 50%;
+  min-width: 40%;
 }
