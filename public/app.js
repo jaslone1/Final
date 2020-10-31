@@ -1,5 +1,7 @@
+import Accordian from 'react-bootstrap/Accordian';
+
 class App extends React.Component {
-  import Accordian from 'react-bootstrap/Accordian';
+
     state = {
         bikes:[]
     }
