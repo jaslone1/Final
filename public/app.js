@@ -127,7 +127,7 @@ class App extends React.Component {
             {
                 this.state.bikes.map(
                     (bike, index) => {
-                        return  <div class="card" style="width: 20rem;" key={index}>
+                        return  <div class="card" style={{width: 20 + 'rem'}} key={index}>
                               Owner: {bike.owner}<br />
                               Brand: {bike.brand}<br />
                               Model: {bike.model}<br />
