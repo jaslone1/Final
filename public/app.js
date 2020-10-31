@@ -142,8 +142,9 @@ class App extends React.Component {
                               Model: {bike.model}<br />
                               Maintenance notes: {bike.maintenance}<br />
                               <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
-                            </li>
                               </Card.Body>
+                            </li>
+
                             </Accordion.Collapse>
                           </Card>
                           </Accordion>
