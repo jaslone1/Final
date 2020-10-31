@@ -123,16 +123,20 @@ class App extends React.Component {
     }
 
     render = () => {
-        return <div>
+        return <div class="container">
             {
                 this.state.bikes.map(
                     (bike, index) => {
                         return  <div class="card" style={{width: 20 + 'rem'}} key={index}>
-                              Owner: {bike.owner}<br />
+                          <div class="card-body">
+                            <h4 Owner: {bike.owner}</h4>
+                              <p class="card-text">
                               Brand: {bike.brand}<br />
                               Model: {bike.model}<br />
                               Maintenance notes: {bike.maintenance}<br />
+                              </p>
                               <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
+                          </div>
                         </div>
                     }
                 )
