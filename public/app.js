@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Accordian from 'react-bootstrap/Accordian';
+import Accordion from 'react-bootstrap/Accordion';
 
 class App extends React.Component {
 
