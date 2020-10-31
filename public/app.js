@@ -1,4 +1,4 @@
-import Accordion from 'react-bootstrap/Accordion';
+import {Accordion, Card} from 'react-bootstrap';
 
 class App extends React.Component {
 
