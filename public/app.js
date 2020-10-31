@@ -1,5 +1,3 @@
-import { Card } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends React.Component {
 
     state = {
@@ -129,14 +127,12 @@ class App extends React.Component {
             {
                 this.state.bikes.map(
                     (bike, index) => {
-                        return  <div key={index}>
-                          <Card>
+                        return  <div class="card" style="width: 20rem;" key={index}>
                               Owner: {bike.owner}<br />
                               Brand: {bike.brand}<br />
                               Model: {bike.model}<br />
                               Maintenance notes: {bike.maintenance}<br />
                               <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
-                          </Card>
                         </div>
                     }
                 )
