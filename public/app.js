@@ -129,7 +129,7 @@ class App extends React.Component {
                     (bike, index) => {
                         return  <div class="card" style={{width: 20 + 'rem'}} key={index}>
                           <div class="card-body">
-                            <h4 Owner: {bike.owner}</h4>
+                            <h4 class="card-title"> Owner: {bike.owner}</h4>
                               <p class="card-text">
                               Brand: {bike.brand}<br />
                               Model: {bike.model}<br />
