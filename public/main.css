@@ -13,3 +13,10 @@ footer {
 li.span4 {
   list-style: none;
 }
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  min-width: 50%;
+}
