@@ -135,6 +135,10 @@ class App extends React.Component {
                               Model: {bike.model}<br />
                               Maintenance notes: {bike.maintenance}<br />
                               </p>
+                              <form id={bike.id} onSubmit={this.updateBike}>
+                                    <input onKeyUp={this.changeUpdateBikeMaintenance} type="textarea" placeholder="edit notes"/><br/>
+                                    <input type="submit" value="Update Notes"/>
+                                </form>
                               <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
                           </div>
                         </div>
