@@ -82,7 +82,7 @@ class Add extends React.Component {
               <input type="submit" value="Create Bike" />
           </form>
           :
-          <button onClick={this.showForm}{refreshPage}>hello</button>
+          <button onClick={this.showForm} onClick={refreshPage}>hello</button>
         }
       </div>
     }
