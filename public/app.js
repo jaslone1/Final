@@ -1,5 +1,4 @@
 class App extends React.Component {
-
     state = {
         bikes:[]
     }
@@ -22,7 +21,6 @@ class App extends React.Component {
                 })
             }
         )
-
     }
 
     updateBike = (event) => {
@@ -81,6 +79,28 @@ class App extends React.Component {
         )
     }
 
+    createNote = (event) => {
+        event.preventDefault();
+        axios.post(
+            '/api/bikes',
+            {
+              maintenance:this.state.newBikeMaintenance,
+            }
+        ).then(
+            (response) => {
+                this.setState({
+                    bikes:response.data
+                }
+              )
+            }
+        )
+    }
+    changeNewBikeMaintenance = (event) => {
+      this.setState({
+          newBikeMaintenance:event.target.value
+      });
+  }
+
     render = () => {
         return <div class="container">
             {
@@ -94,10 +114,14 @@ class App extends React.Component {
                               Model: {bike.model}<br />
                               Maintenance notes: {bike.maintenance}<br />
                               </p>
-                              <form id={bike.id} onSubmit={this.updateBike}>
-                                    <input onKeyUp={this.changeUpdateBikeMaintenance} type="text" placeholder="edit notes"/><br/>
-                                    <input type="submit" value="Update Notes"/>
-                                </form>
+                              <form onSubmit={this.createNote}>
+                                  <input onKeyUp={this.changeNewBikeMaintenance} type="textarea" placeholder="notes" /><br/>
+                                  <input type="submit" value="Create Note" />
+                              </form>
+                              // <form id={bike.id} onSubmit={this.updateBike}>
+                              //       <input onKeyUp={this.changeUpdateBikeMaintenance} type="text" placeholder="edit notes"/><br/>
+                              //       <input type="submit" value="Update Notes"/>
+                              //   </form>
                               <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
                           </div>
                         </div>
