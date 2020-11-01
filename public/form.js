@@ -4,8 +4,6 @@ class Add extends React.Component {
         hidden: true
     }
 
-    const reload=()=>window.location.reload();
-
     showForm = () => {
       this.setState({
         hidden:false
@@ -41,7 +39,7 @@ class Add extends React.Component {
                     bikes:response.data
                 }
               ).then(
-                reload()
+                window.location.reload()
               )
             }
         )
