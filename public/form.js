@@ -1,6 +1,13 @@
-class Form extends React.Component {
+class Add extends React.Component {
     state = {
-        bikes:[]
+        bikes:[],
+        hidden: true
+    }
+
+    showForm = () => {
+      this.setState({
+        hidden:false
+      })
     }
 
     componentDidMount = () => {
@@ -15,6 +22,9 @@ class Form extends React.Component {
 
     createBike = (event) => {
         event.preventDefault();
+        this.setState({
+          hidden:true
+        })
         axios.post(
             '/api/bikes',
             {
@@ -27,7 +37,10 @@ class Form extends React.Component {
             (response) => {
                 this.setState({
                     bikes:response.data
-                })
+                }
+              ).then(
+                refreshPage()
+              )
             }
         )
     }
@@ -56,19 +69,22 @@ class Form extends React.Component {
 
     render = () => {
         return <div>
-            <h2>Add a new Bike</h2>
-            <form onSubmit={this.createBike}>
-                <input onKeyUp={this.changeNewBikeBrand} type="text" placeholder="brand" /><br/>
-                <input onKeyUp={this.changeNewBikeModel} type="text" placeholder="model" /><br/>
-                <input onKeyUp={this.changeNewBikeMaintenance} type="text" placeholder="maintenance notes" /><br/>
-                <input onKeyUp={this.changeNewBikeOwner} type="text" placeholder="owner" /><br/>
-                <input type="submit" value="Create Bike" />
-            </form>
-        </div>
+        {!this.state.hidden ?
+          <form onSubmit={this.createBike}>
+              <input onKeyUp={this.changeNewBikeBrand} type="text" placeholder="brand" /><br/>
+              <input onKeyUp={this.changeNewBikeModel} type="text" placeholder="model" /><br/>
+              <input onKeyUp={this.changeNewBikeMaintenance} type="text" placeholder="maintenance notes" /><br/>
+              <input onKeyUp={this.changeNewBikeOwner} type="text" placeholder="owner" /><br/>
+              <input type="submit" value="Create Bike" />
+          </form>
+          :
+          <button onClick={this.showForm}>hello</button>
+        }
+      </div>
     }
 }
 
 ReactDOM.render(
-    <Form></Form>,
-    document.querySelector('form')
+    <Add></Add>,
+    document.querySelector('add')
 )
