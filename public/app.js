@@ -14,46 +14,46 @@ class App extends React.Component {
         )
     }
 
-    createBike = (event) => {
-        event.preventDefault();
-        axios.post(
-            '/api/bikes',
-            {
-                brand:this.state.newBikeBrand,
-                model:this.state.newBikeModel,
-                owner:this.state.newBikeOwner,
-                maintenance:this.state.newBikeMaintenance,
-            }
-        ).then(
-            (response) => {
-                this.setState({
-                    bikes:response.data
-                })
-            }
-        )
-    }
-
-    changeNewBikeModel = (event) => {
-        this.setState({
-            newBikeModel:event.target.value
-        });
-    }
-
-    changeNewBikeBrand = (event) => {
-        this.setState({
-            newBikeBrand:event.target.value
-        });
-    }
-    changeNewBikeMaintenance = (event) => {
-        this.setState({
-            newBikeMaintenance:event.target.value
-        });
-    }
-    changeNewBikeOwner = (event) => {
-        this.setState({
-            newBikeOwner:event.target.value
-        });
-    }
+    // createBike = (event) => {
+    //     event.preventDefault();
+    //     axios.post(
+    //         '/api/bikes',
+    //         {
+    //             brand:this.state.newBikeBrand,
+    //             model:this.state.newBikeModel,
+    //             owner:this.state.newBikeOwner,
+    //             maintenance:this.state.newBikeMaintenance,
+    //         }
+    //     ).then(
+    //         (response) => {
+    //             this.setState({
+    //                 bikes:response.data
+    //             })
+    //         }
+    //     )
+    // }
+    //
+    // changeNewBikeModel = (event) => {
+    //     this.setState({
+    //         newBikeModel:event.target.value
+    //     });
+    // }
+    //
+    // changeNewBikeBrand = (event) => {
+    //     this.setState({
+    //         newBikeBrand:event.target.value
+    //     });
+    // }
+    // changeNewBikeMaintenance = (event) => {
+    //     this.setState({
+    //         newBikeMaintenance:event.target.value
+    //     });
+    // }
+    // changeNewBikeOwner = (event) => {
+    //     this.setState({
+    //         newBikeOwner:event.target.value
+    //     });
+    // }
 
     deleteBike = (event) => {
         axios.delete('/api/bikes/' + event.target.value).then(
