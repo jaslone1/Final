@@ -10,10 +10,6 @@ class Add extends React.Component {
       })
     }
 
-    refreshPage = () => {
-      window.location.reload(false)
-    }
-
     componentDidMount = () => {
         axios.get('/api/bikes').then(
             (response) => {
@@ -25,7 +21,6 @@ class Add extends React.Component {
     }
 
     createBike = (event) => {
-        event.preventDefault();
         this.setState({
           hidden:true
         })
@@ -77,7 +72,7 @@ class Add extends React.Component {
           <form onSubmit={this.createBike}>
               <input onKeyUp={this.changeNewBikeBrand} type="text" placeholder="brand" /><br/>
               <input onKeyUp={this.changeNewBikeModel} type="text" placeholder="model" /><br/>
-              <input onKeyUp={this.changeNewBikeMaintenance} type="text" placeholder="maintenance notes" /><br/>
+              <textarea onKeyUp={this.changeNewBikeMaintenance} placeholder="maintenance notes" /><br/>
               <input onKeyUp={this.changeNewBikeOwner} type="text" placeholder="owner" /><br/>
               <input type="submit" value="Create Bike" />
           </form>
