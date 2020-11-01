@@ -24,7 +24,6 @@ class App extends React.Component {
     }
 
     updateBike = (event) => {
-        event.preventDefault();
         const id = event.target.getAttribute('id');
         axios.put(
             '/api/bikes/' + id,
