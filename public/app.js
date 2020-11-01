@@ -114,7 +114,7 @@ class App extends React.Component {
                               Model: {bike.model}<br />
                               Maintenance notes: {bike.maintenance}<br />
                               </p>
-                              <form id={bike.id} onSubmit={this.createNote}>
+                              <form id={bike.maintenance} onSubmit={this.createNote}>
                                   <input onKeyUp={this.changeNewBikeMaintenance} type="textarea" placeholder="notes" /><br/>
                                   <input type="submit" value="Create Note" />
                               </form>
