@@ -25,30 +25,46 @@ class App extends React.Component {
 
     }
 
-    updateBike = (event) => {
-        event.preventDefault();
-        const id = event.target.getAttribute('id');
-        axios.put(
-            '/api/bikes/' + id,
-            {
-                brand:this.state.updateBikeBrand,
-                model:this.state.updateBikeModel,
-                maintenance:this.state.updateBikeMaintenance,
-                owner:this.state.updateBikeOwner,
-            }
-        ).then(
-            (response) => {
-                this.setState({
-                    bikes:response.data,
-                    brand:'',
-                    model:'',
-                    maintenance:'',
-                    owner:'',
-                })
-            }
-        )
+    // updateBike = (event) => {
+    //     event.preventDefault();
+    //     const id = event.target.getAttribute('id');
+    //     axios.put(
+    //         '/api/bikes/' + id,
+    //         {
+    //             brand:this.state.updateBikeBrand,
+    //             model:this.state.updateBikeModel,
+    //             // maintenance:this.state.updateBikeMaintenance,
+    //             owner:this.state.updateBikeOwner,
+    //         }
+    //     ).then(
+    //         (response) => {
+    //             this.setState({
+    //                 bikes:response.data,
+    //                 brand:'',
+    //                 model:'',
+    //                 // maintenance:'',
+    //                 owner:'',
+    //             })
+    //         }
+    //     )
+    // }
+    updateNote =(event) => {
+      event.preventDefault();
+      const id = event.target.getAttribute('id');
+      axios.put(
+        '/api/bikes/' + id,
+        {
+          maintenance:this.state.updateBikeMaintenance
+        }
+      ).then(
+        (response) => {
+          this.setState({
+            bike:response.data,
+            maintenance:'',
+          })
+        }
+      )
     }
-
     changeUpdateBikeBrand = (event) => {
         this.setState(
             {
@@ -94,7 +110,7 @@ class App extends React.Component {
                               Model: {bike.model}<br />
                               Maintenance notes: {bike.maintenance}<br />
                               </p>
-                              <form id={bike.id} onSubmit={this.updateBike}>
+                              <form id={bike.id} onSubmit={this.updateNote}>
                                     <input onKeyUp={this.changeUpdateBikeMaintenance} type="text" placeholder="edit notes"/><br/>
                                     <input type="submit" value="Update Notes"/>
                                 </form>
