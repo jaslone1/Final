@@ -15,7 +15,7 @@ class Add extends React.Component {
             (response) => {
                 this.setState({
                     bikes:response.data
-                }) 
+                })
             }
         )
     }
@@ -54,12 +54,7 @@ class Add extends React.Component {
             newBikeBrand:event.target.value
         });
     }
-    changeNewBikeMaintenance = (event) => {
-        this.setState({
-            newBikeMaintenance:event.target.value
-        });
-    }
-    changeNewBikeOwner = (event) => {
+      changeNewBikeOwner = (event) => {
         this.setState({
             newBikeOwner:event.target.value
         });
@@ -71,7 +66,6 @@ class Add extends React.Component {
           <form onSubmit={this.createBike}>
               <input onKeyUp={this.changeNewBikeBrand} type="text" placeholder="brand" /><br/>
               <input onKeyUp={this.changeNewBikeModel} type="text" placeholder="model" /><br/>
-              <textarea onKeyUp={this.changeNewBikeMaintenance} placeholder="maintenance notes" /><br/>
               <input onKeyUp={this.changeNewBikeOwner} type="text" placeholder="owner" /><br/>
               <input type="submit" value="Create Bike" />
           </form>
