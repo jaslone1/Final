@@ -4,6 +4,8 @@ class Add extends React.Component {
         hidden: true
     }
 
+    const reload=()=>window.location.reload();
+
     showForm = () => {
       this.setState({
         hidden:false
@@ -21,6 +23,7 @@ class Add extends React.Component {
     }
 
     createBike = (event) => {
+        event.preventDefault();
         this.setState({
           hidden:true
         })
@@ -38,7 +41,7 @@ class Add extends React.Component {
                     bikes:response.data
                 }
               ).then(
-                refreshPage()
+                reload()
               )
             }
         )
