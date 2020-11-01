@@ -16,7 +16,7 @@ class Add extends React.Component {
                 this.setState({
                     bikes:response.data
                 }) .then (
-                  window.location.reload()
+                  this.forceUpdate();
                 )
             }
         )
