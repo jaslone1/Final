@@ -15,9 +15,7 @@ class Add extends React.Component {
             (response) => {
                 this.setState({
                     bikes:response.data
-                }) .then (
-                  this.forceUpdate()
-                )
+                }) 
             }
         )
     }
