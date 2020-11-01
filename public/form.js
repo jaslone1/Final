@@ -15,7 +15,9 @@ class Add extends React.Component {
             (response) => {
                 this.setState({
                     bikes:response.data
-                })
+                }) .then (
+                  window.location.reload()
+                )
             }
         )
     }
@@ -38,8 +40,6 @@ class Add extends React.Component {
                 this.setState({
                     bikes:response.data
                 }
-              ).then(
-                window.location.reload()
               )
             }
         )
