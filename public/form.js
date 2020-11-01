@@ -10,8 +10,8 @@ class Add extends React.Component {
       })
     }
 
-    refreshPage= () => {
-      window.location.reload(false);
+    refreshPage = () => {
+      window.location.reload(false)
     }
 
     componentDidMount = () => {
@@ -43,7 +43,7 @@ class Add extends React.Component {
                     bikes:response.data
                 }
               ).then(
-                window.location.reload()
+                refreshPage()
               )
             }
         )
@@ -82,7 +82,7 @@ class Add extends React.Component {
               <input type="submit" value="Create Bike" />
           </form>
           :
-          <button onClick={this.showForm} onClick={refreshPage}>hello</button>
+          <button onClick={this.showForm}>hello</button>
         }
       </div>
     }
