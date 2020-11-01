@@ -33,7 +33,7 @@ class App extends React.Component {
     //         {
     //             brand:this.state.updateBikeBrand,
     //             model:this.state.updateBikeModel,
-    //             // maintenance:this.state.updateBikeMaintenance,
+    //             maintenance:this.state.updateBikeMaintenance,
     //             owner:this.state.updateBikeOwner,
     //         }
     //     ).then(
@@ -42,7 +42,7 @@ class App extends React.Component {
     //                 bikes:response.data,
     //                 brand:'',
     //                 model:'',
-    //                 // maintenance:'',
+    //                 maintenance:'',
     //                 owner:'',
     //             })
     //         }
