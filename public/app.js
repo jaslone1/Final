@@ -79,22 +79,6 @@ class App extends React.Component {
         )
     }
 
-    createNote = (event) => {
-        event.preventDefault();
-        axios.post(
-            '/api/bikes',
-            {
-              maintenance:this.state.newBikeMaintenance,
-            }
-        ).then(
-            (response) => {
-                this.setState({
-                    bikes:response.data
-                }
-              )
-            }
-        )
-    }
     changeNewBikeMaintenance = (event) => {
       this.setState({
           newBikeMaintenance:event.target.value
@@ -115,13 +99,9 @@ class App extends React.Component {
                               Maintenance notes: {bike.maintenance}<br />
                               </p>
                               <form id={bike.id} onSubmit={this.createNote}>
-                                  <textarea onKeyUp={this.changeNewBikeMaintenance} type="text" placeholder="notes" /><br/>
+                                  <textarea value={this.state.maintenance} onChange={this.changeNewBikeMaintenance} type="text"/><br/>
                                   <input type="submit" value="Create Note" />
                               </form>
-                              <form id={bike.id} onSubmit={this.updateBike}>
-                                    <input onKeyUp={this.changeUpdateBikeMaintenance} type="text" placeholder="edit notes"/><br/>
-                                    <input type="submit" value="Update Notes"/>
-                                </form>
                               <button value={bike.id} onClick={this.deleteBike}>DELETE</button>
                           </div>
                         </div>
