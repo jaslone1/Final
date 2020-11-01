@@ -10,6 +10,10 @@ class Add extends React.Component {
       })
     }
 
+    refreshPage= () => {
+      window.location.reload(false);
+    }
+
     componentDidMount = () => {
         axios.get('/api/bikes').then(
             (response) => {
@@ -78,7 +82,7 @@ class Add extends React.Component {
               <input type="submit" value="Create Bike" />
           </form>
           :
-          <button onClick={this.showForm}>hello</button>
+          <button onClick={this.showForm}{refreshPage}>hello</button>
         }
       </div>
     }
