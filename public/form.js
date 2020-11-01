@@ -39,7 +39,7 @@ class Add extends React.Component {
                     bikes:response.data
                 }
               ).then(
-                window.location.reload(true)
+                window.location.reload()
               )
             }
         )
